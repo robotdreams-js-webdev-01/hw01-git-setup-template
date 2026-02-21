@@ -1,0 +1,13 @@
+{
+  "name": "hw01-git-setup",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "jest --runInBand --json --outputFile=jest-results.json"
+  },
+  "devDependencies": {
+    "jest": "^29"
+  }
+}
