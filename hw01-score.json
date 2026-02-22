@@ -2,9 +2,10 @@
   "homeworkId": "hw01",
   "maxPoints": 15,
   "autoPoints": 10,
+  "manualPointsMax": 5,
   "rawScore": 10,
   "finalScore": 10,
   "passedTests": 2,
   "totalTests": 2,
-  "timestamp": "2026-02-21T19:53:44.481Z"
+  "timestamp": "2026-02-22T19:20:09.775Z"
 }

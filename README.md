@@ -70,14 +70,11 @@ chore: add .gitignore
 
 ---
 
-## Pontozás (15 pont)
+## Pontozás
 
-| Kritérium | Pont |
-|---|---|
-| Toolchain telepítve (README-ben jelezve) | 3p |
-| Legalább 2 commit értelmes üzenetekkel + `.gitignore` jelen van | 4p |
-| Tudatos profil: normális repo-név, kitöltött GitHub profil, strukturált README | 4p |
-| Extra: badge, jó Markdown formázás, linkek, több commit | 4p |
+- **Automatikus pont (CI tesztek):** max 10 p
+- **Manuális pont (commit üzenetek, profil, README minőség – az oktató adja):** max 5 p
+- **Összesen:** 15 pont
 
 ---
 

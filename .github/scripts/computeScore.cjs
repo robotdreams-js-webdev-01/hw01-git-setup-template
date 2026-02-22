@@ -3,11 +3,11 @@ const path = require('path');
 const https = require('https');
 
 const HW_CONFIG = {
-  hw01: { maxPoints: 15, autoPoints: 10 },
-  hw02: { maxPoints: 35, autoPoints: 22 },
-  hw03: { maxPoints: 50, autoPoints: 34 },
-  hw04: { maxPoints: 75, autoPoints: 50 },
-  hw05: { maxPoints: 100, autoPoints: 68 },
+  hw01: { maxPoints: 15, autoPoints: 10, manualPointsMax: 5 },
+  hw02: { maxPoints: 35, autoPoints: 22, manualPointsMax: 13 },
+  hw03: { maxPoints: 50, autoPoints: 34, manualPointsMax: 16 },
+  hw04: { maxPoints: 75, autoPoints: 50, manualPointsMax: 25 },
+  hw05: { maxPoints: 100, autoPoints: 68, manualPointsMax: 32 },
 };
 
 const hwId = process.env.HW_ID;
@@ -41,7 +41,7 @@ if (fs.existsSync(hintsPath)) {
 }
 
 const rawScore = total > 0 ? Math.floor((config.autoPoints * passed) / total) : 0;
-const manualPoints = config.maxPoints - config.autoPoints;
+const manualPointsMax = config.manualPointsMax;
 
 const runUrl =
   (process.env.GITHUB_SERVER_URL || '') +
@@ -69,9 +69,9 @@ lines.push(
     'p'
 );
 lines.push(
-  '**Oktat\u00F3i \u00E9rt\u00E9kel\u00E9s:** +' +
-    manualPoints +
-    'p (manu\u00E1lis) | **Maximum:** ' +
+  '**Manu\u00E1lis pont** (diz\u00E1jn, deploy, stb. \u2013 az oktat\u00F3 adja): 0\u2013' +
+    manualPointsMax +
+    'p | **\u00D6sszes max:** ' +
     config.maxPoints +
     'p'
 );
@@ -98,7 +98,7 @@ if (failed.length > 0) {
 }
 lines.push('');
 lines.push(
-  '> _Az automatikus pontsz\u00E1m el\u0151zetes. A v\u00E9gleges \u00E9rt\u00E9kel\u00E9s az oktat\u00F3i fel\u00FClvizsg\u00E1lat ut\u00E1n ker\u00FCl r\u00F6gz\u00EDt\u00E9sre._'
+  '> _Az automatikus pontsz\u00E1m el\u0151zetes. A v\u00E9gleges pont = automatikus + manu\u00E1lis (oktat\u00F3i) pont._'
 );
 
 const comment = lines.join('\n');
@@ -107,6 +107,7 @@ const score = {
   homeworkId: hwId,
   maxPoints: config.maxPoints,
   autoPoints: config.autoPoints,
+  manualPointsMax: config.manualPointsMax,
   rawScore: rawScore,
   finalScore: rawScore,
   passedTests: passed,
