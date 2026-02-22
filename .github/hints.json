@@ -1,0 +1,34 @@
+{
+  "A README fájl létrehozva és feltöltve": {
+    "lesson": 2,
+    "tip": "A README.md fájl legyen a repo gyökerében, legalább 100 karakter"
+  },
+  "A README tartalmaz bemutatkozó szakaszt": {
+    "lesson": 2,
+    "tip": "Adj hozzá egy ## Bemutatkozás vagy ## About szekciót"
+  },
+  "A README tartalmaz kurzuscélokat": {
+    "lesson": 2,
+    "tip": "Adj hozzá egy ## Célok szekciót legalább 3 bullet ponttal"
+  },
+  "A README legalább 3 bullet pontot tartalmaz": {
+    "lesson": 2,
+    "tip": "Használj - vagy * karaktert a bullet pontokhoz"
+  },
+  "A .gitignore fájl létrehozva": {
+    "lesson": 2,
+    "tip": "Hozz létre .gitignore fájlt: touch .gitignore"
+  },
+  "A .gitignore tartalmazza a node_modules kizárást": {
+    "lesson": 2,
+    "tip": "Írj node_modules/ sort a .gitignore-ba"
+  },
+  "A README megfelelő Markdown formázást használ": {
+    "lesson": 2,
+    "tip": "Használj ## fejléceket a szekciókhoz"
+  },
+  "A README tartalmaz legalább 2 különböző szakaszt (heading)": {
+    "lesson": 2,
+    "tip": "Legalább két ## szintű fejléc legyen a README-ben"
+  }
+}
