@@ -97,7 +97,7 @@ chore: add .gitignore
 
 ## Futtatás
 
-Ehhez a házihoz **csak Git szükséges**, `npm` nem kell.
+Ehhez a házihoz **csak Git és npm szükséges**.
 
 ---
 
