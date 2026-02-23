@@ -38,10 +38,25 @@ Hozd létre vagy frissítsd a GitHub profilodat:
 
 ### 3. GitHub Classroom assignment elfogadása
 
-Fogadd el a GitHub Classroom assignment linket (az oktatótól kapod meg).
+Fogadd el a GitHub Classroom assignment linket (az oktatótól kapod meg)!
 Ez automatikusan létrehozza a **privát repódat** a `robotdreams-js-webdev-01` szervezeten belül.
 
-### 4. Saját README létrehozása a student mappában
+### 4. Git repository klónozása
+
+Klónozd le a repot a saját gépedre (ha Windowst használsz, akkor WSL-re) a `git clone` parancs segítségével!
+Használhatod a HTTPS és az SSH módot is, de az SSH az ajánlott. Ehhez segítséget [itt](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux) és [itt](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) találsz.
+
+### 5. Dependenciák
+
+Futtasd le az `npm install` parancsot a repon belül!
+Látni fogod, hogy a git fel akarja ezeket a változtatásokat venni, de erre nincs szükség, hiszen minden fontos információt a `package.json` már tartalmaz.
+
+### 5. .gitignore
+
+A repó gyökerében legyen **.gitignore** fájl, amely tartalmazza a **node_modules/** sort (és esetleg más, nem feltöltendő fájlokat).
+Ez fogja megakadályozni, hogy a git fel akarja tölteni az akár nagyra is növekvő `node_modules` mappát.
+
+### 6. Saját README létrehozása a student mappában
 
 Hozd létre a **student/README.md** fájlt a `student/README-example.md` mintája alapján, a **saját adataiddal**. A fájl tartalmazzon:
 
@@ -52,11 +67,7 @@ Hozd létre a **student/README.md** fájlt a `student/README-example.md` mintáj
 
 A minta csak segítség – ne másold szó szerint, alakítsd a saját szövegedre.
 
-### 5. .gitignore
-
-A repó gyökerében legyen **.gitignore** fájl, amely tartalmazza a **node_modules/** sort (és esetleg más, nem feltöltendő fájlokat).
-
-### 6. Commitok
+### 7. Commitok
 
 Legalább **2 commitot** hozz létre értelmes üzenetekkel. Használd a Conventional Commits konvenciót:
 
