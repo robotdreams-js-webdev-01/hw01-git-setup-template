@@ -1,34 +1,38 @@
 {
-  "A README fájl létrehozva és feltöltve": {
+  "A student/README.md fájl létrehozva": {
     "lesson": 2,
-    "tip": "A README.md fájl legyen a repo gyökerében, legalább 100 karakter"
+    "tip": "Hozd létre a student/README.md fájlt a student/README-example.md mintája alapján"
   },
-  "A README tartalmaz bemutatkozó szakaszt": {
+  "A student/README.md legalább 100 karakter": {
     "lesson": 2,
-    "tip": "Adj hozzá egy ## Bemutatkozás vagy ## About szekciót"
+    "tip": "A student/README.md tartalmazzon több szakaszt és legalább ~100 karaktert"
   },
-  "A README tartalmaz kurzuscélokat": {
+  "A student/README.md tartalmaz bemutatkozó szakaszt": {
     "lesson": 2,
-    "tip": "Adj hozzá egy ## Célok szekciót legalább 3 bullet ponttal"
+    "tip": "Adj hozzá egy ## Bemutatkozás vagy ## Rólam szekciót a student/README.md-ban"
   },
-  "A README legalább 3 bullet pontot tartalmaz": {
+  "A student/README.md tartalmaz kurzuscélokat": {
     "lesson": 2,
-    "tip": "Használj - vagy * karaktert a bullet pontokhoz"
+    "tip": "Adj hozzá egy ## Kurzuscélok szekciót legalább 3 bullet ponttal"
   },
-  "A .gitignore fájl létrehozva": {
+  "A student/README.md legalább 3 bullet pontot tartalmaz": {
     "lesson": 2,
-    "tip": "Hozz létre .gitignore fájlt: touch .gitignore"
+    "tip": "Használj - vagy * karaktert a bullet pontokhoz a student/README.md-ban"
   },
-  "A .gitignore tartalmazza a node_modules kizárást": {
+  "A student/README.md legalább 2 fejlécet (heading) tartalmaz": {
     "lesson": 2,
-    "tip": "Írj node_modules/ sort a .gitignore-ba"
+    "tip": "Legalább két ## szintű fejléc legyen a student/README.md-ban"
   },
-  "A README megfelelő Markdown formázást használ": {
+  "A student/README.md Markdown formázást használ": {
     "lesson": 2,
     "tip": "Használj ## fejléceket a szekciókhoz"
   },
-  "A README tartalmaz legalább 2 különböző szakaszt (heading)": {
+  "A .gitignore fájl létrehozva": {
     "lesson": 2,
-    "tip": "Legalább két ## szintű fejléc legyen a README-ben"
+    "tip": "Hozz létre .gitignore fájlt a repo gyökerében, ha még nincs"
+  },
+  "A .gitignore tartalmazza a node_modules kizárást": {
+    "lesson": 2,
+    "tip": "Írj node_modules/ sort a .gitignore fájlba"
   }
 }

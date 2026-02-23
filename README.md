@@ -26,7 +26,7 @@ Telepítsd az alábbi eszközöket, és ellenőrizd, hogy működnek:
 - **VSCode** – [code.visualstudio.com](https://code.visualstudio.com/)
 - VSCode extensionök: **ESLint**, **Prettier**, **GitLens**, **GitHub Copilot**
 
-A README.md-edben jelezd, hogy ezek telepítve vannak (pl. egy rövid felsorolásban).
+A **student/README.md**-ben (vagy a repó README-jében) jelezd, hogy ezek telepítve vannak (pl. egy rövid felsorolásban).
 
 ### 2. GitHub profil kialakítása
 
@@ -41,17 +41,22 @@ Hozd létre vagy frissítsd a GitHub profilodat:
 Fogadd el a GitHub Classroom assignment linket (az oktatótól kapod meg).
 Ez automatikusan létrehozza a **privát repódat** a `robotdreams-js-webdev-01` szervezeten belül.
 
-### 4. README.md kitöltése a saját repódban
+### 4. Saját README létrehozása a student mappában
 
-A repód `README.md` fájlját töltsd ki az alábbiak szerint:
+Hozd létre a **student/README.md** fájlt a `student/README-example.md` mintája alapján, a **saját adataiddal**. A fájl tartalmazzon:
 
-- **Rövid bemutatkozás** (2–3 mondat: ki vagy, miért tanulsz programozni)
-- **Kurzuscélok** (legalább 3 bullet pont: mit szeretnél megtanulni/elérni)
-- Opcionálisan: LinkedIn / portfólió link
+- **Bemutatkozás** szakaszt (2–3 mondat: ki vagy, miért tanulsz programozni)
+- **Kurzuscélok** szakaszt legalább **3 bullet ponttal** (mit szeretnél megtanulni/elérni)
+- Legalább **két szintű fejlécet** (pl. `## Bemutatkozás`, `## Kurzuscélok`)
+- Opcionálisan: kapcsolat / LinkedIn / portfólió link
 
-Segítségként nézd meg a `student/README-example.md` fájlt – **ne másold szó szerint**, csak mintának használd!
+A minta csak segítség – ne másold szó szerint, alakítsd a saját szövegedre.
 
-### 5. Commitok
+### 5. .gitignore
+
+A repó gyökerében legyen **.gitignore** fájl, amely tartalmazza a **node_modules/** sort (és esetleg más, nem feltöltendő fájlokat).
+
+### 6. Commitok
 
 Legalább **2 commitot** hozz létre értelmes üzenetekkel. Használd a Conventional Commits konvenciót:
 
@@ -65,8 +70,9 @@ chore: add .gitignore
 
 ## Minimum elvárások
 
-- A repó elérhető és a README ki van töltve
-- Legalább 1 komolyabb (nem üres, nem „first commit") commit üzenet
+- A **student/README.md** létezik és a fenti tartalmi követelményeknek megfelel
+- A **.gitignore** tartalmazza a node_modules kizárását
+- Legalább 1 komolyabb (nem üres, nem „first commit”) commit üzenet
 
 ---
 
